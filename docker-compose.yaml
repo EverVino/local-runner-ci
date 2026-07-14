@@ -1,0 +1,17 @@
+#compose
+services:
+  github-runner:
+    build:
+      context: .
+
+    container_name: github-runner-instance
+    restart: unless-stopped
+    environment:
+      - GITHUB_OWNER=${GITHUB_OWNER}
+      - GITHUB_REPO=${GITHUB_REPO}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    volumes:
+      - runner-work:/home/runner/actions-runner/_work
+
+volumes:
+  runner-work:
