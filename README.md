@@ -23,6 +23,18 @@ The registration token will be displayed in the generated setup commands. Copy i
 
 > **Note:** This registration token expires after one hour. It is only used to register the runner.
 
+To have up and runnnig the runner:
+
+```
+docker compose up --build
+```
+
+To shut down the runner ro you can simply press Ctrl + C:
+
+```
+docker compose down
+```
+
 ## Security Considerations
 
 If you are using this runner with a private repository, it is **strongly recommended** to restrict workflows triggered by pull requests from non-collaborators.
