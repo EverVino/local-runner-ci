@@ -37,7 +37,7 @@ docker compose down
 
 ## Security Considerations
 
-If you are using this runner with a private repository, it is **strongly recommended** to restrict workflows triggered by pull requests from non-collaborators.
+If you are using this runner with a public repository, it is **strongly recommended** to restrict workflows triggered by pull requests from non-collaborators.
 
 To prevent non-collaborators from opening PRs on your repo:
 
